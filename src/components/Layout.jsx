@@ -3,7 +3,7 @@ import { NavBar } from "./NavBar"
 
 export const Layout = () => {
   return (
-    <div>
+    <div >
       <NavBar />
       <Outlet />
     </div>

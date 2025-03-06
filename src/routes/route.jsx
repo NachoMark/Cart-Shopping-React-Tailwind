@@ -3,6 +3,8 @@ import { HomePage } from "../pages/HomePage";
 import { CartPage } from "../pages/CartPage";
 import { Layout } from "../components/Layout";
 import { ProductDetails } from "../pages/ProductDetails";
+import { LogIn } from "../pages/LogIn";
+import { SingUp } from "../pages/SingUp";
 
 const router = createBrowserRouter([
     {
@@ -11,6 +13,14 @@ const router = createBrowserRouter([
         children: [{
             path: "/",
             element: <HomePage />
+        },
+        {
+            path: "/login",
+            element: <LogIn />
+        },
+        {
+            path: "/singup",
+            element: <SingUp />
         },
         {
             path: "/products/:id",
